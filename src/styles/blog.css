@@ -5,18 +5,23 @@
 		'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 
 	--color-white: #fff;
-	--color-black: #000014;
+	/* --color-black: #273140; */
+    --color-black: #192333;
 
 	--color-gray-50: #f9fafb;
 	--color-gray-100: #f3f4f6;
 	--color-gray-200: #e5e7eb;
 	--color-gray-300: #d1d5db;
-	--color-gray-400: #9ca3af;
+	/* --color-gray-400: #9ca3af; */
+	--color-gray-400: #acafb5;
 	--color-gray-500: #6b7280;
 	--color-gray-600: #4b5563;
 	--color-gray-700: #374151;
 	--color-gray-800: #1f2937;
 	--color-gray-900: #111827;
+
+    --color-light-green: #0fbd4f;
+    --color-light-green-rgb: 15, 198, 79;
 
 	--color-blue: #3894ff;
 	--color-blue-rgb: 56, 148, 255;
@@ -56,9 +61,11 @@ body {
 
 :root {
 	color-scheme: dark;
+    --theme-accent: var(--color-light-green);
+	--theme-accent-rgb: var(--color-light-green-rgb);
 	--theme-accent-opacity: 0.3;
 	--theme-divider: var(--color-gray-900);
-	--theme-text: var(--color-gray-200);
+	--theme-text: var(--color-gray-100);
 	--theme-text-light: var(--color-gray-400);
 	--theme-text-lighter: var(--color-gray-600);
 	--theme-bg: var(--color-black);
@@ -69,7 +76,7 @@ body {
 }
 
 ::selection {
-	color: var(--theme-accent);
+	/* color: var(--theme-accent); */
 	background-color: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
 }
 
@@ -260,10 +267,11 @@ img.cover {
 }
 
 blockquote {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	--padding-block: 1rem;
 	--padding-inline: 1.25rem;
-	--color: var(--theme-divider);
+	/* --color: var(--theme-divider); */
+	--color: var(--theme-text-lighter);
 
 	display: flex;
 	flex-direction: column;
