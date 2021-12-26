@@ -19,7 +19,7 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 				{heroImage && <img width="720" height="420" class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
 				<p class="publish-date">{publishDate}</p>
 				<h1 class="title">{title}</h1>
-				<Author name="Zac Yellowhorse" href="https://google.com" />
+				<Author name="Zac Yellowhorse" href="https://github.com/zyellowhorse" />
 			</header>
 			<main>
 				<slot />
@@ -67,7 +67,7 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 
 		padding-bottom: 2rem;
 		margin-bottom: 2rem;
-		border-bottom: 4px solid var(--theme-divider);
+		/* border-bottom: 1px solid var(--theme-divider); */
 	}
 
 	.title,
