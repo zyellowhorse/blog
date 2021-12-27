@@ -6,4 +6,7 @@
 - Look into creating a search function to look up posts / tags
 - Add a copy to clipboard button to code blocks
 - Add toggle to switch between light and dark theme
-
+- maybe look into changing fonts because "fi" next to each other overlap and looks weird
+- Maybe update the inline code background color to stand out more 
+- Figure out how to get syntax highlighting working in code blocks
+- Maybe there is a way to have hyperlinks open in a new tab

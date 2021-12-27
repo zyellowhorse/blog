@@ -20,6 +20,9 @@
 	--color-gray-800: #1f2937;
 	--color-gray-900: #111827;
 
+
+    --color-light-blue: #4287f5;
+    --color-light-blue-rgb: 66, 135, 245;
     --color-light-green: #0fbd4f;
     --color-light-green-rgb: 15, 198, 79;
 
@@ -61,8 +64,8 @@ body {
 
 :root {
 	color-scheme: dark;
-    --theme-accent: var(--color-light-green);
-	--theme-accent-rgb: var(--color-light-green-rgb);
+    --theme-accent: var(--color-light-blue);
+	--theme-accent-rgb: var(--color-light-blue-rgb);
 	--theme-accent-opacity: 0.3;
 	--theme-divider: var(--color-gray-900);
 	--theme-text: var(--color-gray-100);
@@ -215,7 +218,7 @@ code:not([class*='language']) {
 	font-family: var(--font-mono);
 	font-size: 0.85em;
 	color: inherit;
-	background-color: var(--theme-code-inline-bg);
+	background-color: var(--theme-code-bg);
 	padding: var(--padding-block) var(--padding-inline);
 	margin: calc(var(--padding-block) * -1) -0.125em;
 	border-radius: var(--border-radius);
