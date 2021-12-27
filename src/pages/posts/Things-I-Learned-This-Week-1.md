@@ -9,11 +9,10 @@ description: I spent a large portaion of my days working on getting an iOS app b
 ---
 I spent a large portion of my days working on getting an iOS app build and deploy working with Github Actions also learning a few quarks along the way.
 
-- [Github Actions does not support docker actions on Windows and MacOS runners](#first)
-- [Github Actions runner specified version latest effectively means "stable" not latest](#second)
-- [Apple Developer Enterprise Program Exists](#thrid)
+- [Github Actions does not support docker actions on Windows and MacOS runners](#github-actions-does-not-support-docker-actions-on-windows-and-macos-runners)
+- [Github Actions runner specified version latest effectively means stable not latest](#github-actions-runner-specified-version-latest-effectively-means-stable-not-latest)
+- [Apple Developer Enterprise Program Exists](#apple-developer-enterprise-program-exists)
 
-<a name="first" ></a>
 ## Github Actions does not support docker actions on Windows and MacOS runners
 When running the workflow for an iOS app running on macos-latest I ran into this error message:
 
@@ -23,8 +22,7 @@ It seems self explanatory but wanted to make sure I just didn't do something inc
 
 Basically it gave a little more context on the error message but yeah containerized actions will only work on linux runners at the moment. Luckily for me the actions I was trying to do had a cli for it so I just installed it as part of the pipeline and completed the task I need. 
 
-<a name="second" ></a>
-## Github Actions runner specified version latest effectively means "stable" not latest
+## Github Actions runner specified version latest effectively means stable not latest
 When I was testing out the Github Actions pipeline the app would build and deploy correctly but when testers attempted to download the app and run it there would be a error saying: 
 
 > Needs To Be Updated: The developer of this app needs to update it to work with this version of iPadOS.
@@ -46,7 +44,6 @@ jobs:
     runs-on: macos-11
 ```
 
-<a name="thrid" ></a>
 ## Apple Developer Enterprise Program Exists
 Apple Developer Enterprise Program is a program that companies can join to get access to another distribution provisioning profile. Essentially it's a way to distribute customs apps for internal use only. The other way would be us to use an Adhoc provisioning profile that requires you to register the devices you wish to distribute the app to. With Enterprise provisioning profile you don't need to register the devices they just need to be in the same organization.
 
