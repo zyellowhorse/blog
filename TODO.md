@@ -12,3 +12,4 @@
 - Maybe there is a way to have hyperlinks open in a new tab
 - Fix metadata image for when linking site externally. Card generation.
 - Stop using the template 404 page and create a custom one
+- Fix the 500 error message page
