@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/595b3c15-186c-4ee6-823c-bf55b224ede7/deploy-status)](https://app.netlify.com/sites/boring-roentgen-969bd5/deploys)
+
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
