@@ -30,6 +30,7 @@ I am going to start of by reading the documentation on Astro's site to see if th
 ## Creating the site
 I started out by using Astro's blog template. I created a new directory and ran `npm init astro` this gave me an option to select the blog template. I launched it immediately to see exactly what my base would look like. I had to install the dependencies and run the server with these commands: `npm install` and `npm run dev`. I was met with this screen: 
 ![Building_My_Blog_1](https://www.zacyellowhorse.com/posts_assets/Building_My_Blog_1.png)
+
 Its a good place to start but the first thing I wanted to do was make put a dark theme on it. I forgot a lot about css but I after some googling I was able to figure out that I needed to edit the `src/styles/blog.css` file specifically the `:root` selector because that set the colors. I edited the `:root` to be `:root.theme-light` and changed the `:root.theme-dark` to be just `:root`. That gave me a dark theme.
 
 I did a ton of these sort of changes in the css to get to a color scheme I like which eventually looked like this. 
