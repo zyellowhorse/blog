@@ -13,3 +13,5 @@
 - Fix metadata image for when linking site externally. Card generation.
 - Stop using the template 404 page and create a custom one
 - Fix the 500 error message page
+- Fix image scalling so that it fits correctly in the blog
+- Add the functionality to click a image and see it larger
